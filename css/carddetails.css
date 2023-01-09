@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+.mobile-bg {
+  display: none;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: medium;
+  word-spacing: 0.4em;
+  margin: 3px 0;
+}
+#id-form {
+  margin-bottom: 9rem;
+}
+.input-section {
+  margin: 12rem auto;
+  width: 28%;
+}
+
+input {
+  height: 45px;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0.4px solid hsl(270, 3%, 87%);
+  font-size: large;
+  padding: 1rem;
+  color: hsl(278, 68%, 11%);
+  font-weight: 450;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  border: 1px solid hsl(278, 68%, 11%);
+}
+
+::placeholder {
+  color: hsl(270, 3%, 87%);
+  font-size: medium;
+}
+.each-form {
+  margin: 0.8rem 0;
+  color: hsl(278, 68%, 11%);
+}
+.date-label {
+  display: flex;
+  color: hsl(278, 68%, 11%);
+}
+/* #Exp {
+  width: 100%;
+} */
+
+.Exp {
+  width: 37%;
+  margin-right: 0.1rem;
+}
+
+.CVC {
+  flex-basis: 70%;
+}
+
+/* warning text input-errors */
+.input-errors {
+  color: hsl(0, 100%, 66%);
+  font-size: small;
+  visibility: hidden;
+}
+
+.show-errors {
+  visibility: visible;
+  margin-top: 0.2rem;
+}
+
+button {
+  margin: 2rem auto;
+  display: block;
+  width: 99%;
+  padding: 0.5rem;
+  font-size: medium;
+  border-color: hsl(278, 68%, 11%);
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  border: 0.4px solid hsl(278, 68%, 11%);
+  height: 55px;
+}
+
+/* CARD */
+
+#CARD {
+  position: absolute;
+  top: 9.5rem;
+  left: 9rem;
+}
+.cardFront {
+  position: relative;
+}
+.cardFront h1 {
+  position: absolute;
+  top: 123.5px;
+  left: 44px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 100;
+}
+
+.p1 {
+  position: absolute;
+  top: 205px;
+  margin-left: 2.8rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 100;
+}
+
+.p2 {
+  position: absolute;
+  top: 205px;
+  text-align: right;
+  color: hsl(0, 0%, 100%);
+  left: 358px;
+  font-weight: 100;
+}
+.img-logo {
+  position: absolute;
+  top: 28px;
+  left: 41px;
+}
+/* cardBack */
+.cardBack {
+  position: relative;
+  left: 90px;
+  top: 27px;
+}
+.cardBack p {
+  position: absolute;
+  top: 111px;
+  left: 365px;
+  color: hsl(0, 0%, 100%);
+}
+/* complete-section */
+.complete-section {
+  text-align: center;
+  width: 95%;
+  margin: 0rem auto;
+  margin-bottom: 4rem;
+
+  top: 15rem;
+}
+.complete-section h1 {
+  font-weight: 450;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.complete-section p {
+  font-weight: 200;
+}
+.complete-section button {
+  margin-top: 3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* media queries for 375 */
+
+@media (max-width: 375px) {
+  .desktop-bg {
+    display: none;
+  }
+
+  .mobile-bg {
+    display: block;
+    width: 100%;
+    z-index: -1000;
+  }
+
+  #main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* CARD */
+
+  #CARD {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+  }
+  /* top of card */
+  .cardFront {
+    position: relative;
+    top: 89px;
+    z-index: 10000;
+  }
+  .top-card {
+    width: 80%;
+  }
+
+  .cardFront h1 {
+    position: absolute;
+    top: 73px;
+    left: 14px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .img-logo {
+    position: absolute;
+    top: 17px;
+    left: 24px;
+    width: 15%;
+  }
+
+  .p1 {
+    position: absolute;
+    top: 205px;
+    margin-left: 2.8rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+  }
+
+  .p2 {
+    position: absolute;
+    top: 205px;
+    text-align: right;
+    color: hsl(0, 0%, 100%);
+    left: 358px;
+    font-weight: 100;
+  }
+
+  .p1 {
+    position: absolute;
+    top: 110px;
+    margin-left: 2.8rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+    font-size: xx-small;
+    left: -30px;
+  }
+
+  .p2 {
+    position: absolute;
+    top: 110px;
+    text-align: right;
+    color: hsl(0, 0%, 100%);
+    left: 207px;
+    font-weight: 100;
+    font-size: xx-small;
+  }
+  /* cardback */
+  .cardBack {
+    position: absolute;
+    right: 12px;
+    top: 23px;
+  }
+
+  .back-card {
+    width: 100%;
+  }
+  .cardBack p {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    color: hsl(0, 0%, 100%);
+    z-index: 100000000000;
+    font-size: xx-small;
+  }
+
+  /* input-section */
+  .input-section {
+    margin: 7rem auto;
+    width: 88%;
+  }
+}
